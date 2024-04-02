@@ -48,17 +48,34 @@ h3 {
 }
  
 /* Navigation styles */
-nav {
-    margin-top: 20px;
+
+.page-title {
+    font-size: 20px;
+    color: navy;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 701px;
+    text-decoration: none;
+    border: solid 2px navy;
+    border-radius: 100%;
+    padding: 5px;
 }
- 
+
+nav {
+    padding-bottom: 20px;
+}
+
 nav ul {
     list-style-type: none;
+    position: absolute;
+    right: 20px;
 }
  
 nav ul li {
     display: inline-block;
     margin-right: 10px;
+    
 }
  
 nav ul li a {
@@ -69,7 +86,7 @@ nav ul li a {
  
 #results {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
     grid-gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -134,6 +151,7 @@ input:focus {
 }
  
 .search-btn {
+    text-align: center;
     width: 100%;
 }
  

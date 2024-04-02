@@ -14,11 +14,9 @@
 </head>
 <body>
 
-
-
-
 <header>
     <nav class="navbar">
+        <h1 class="page-title">HB</h1>
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="profile.php">Profil</a></li>
