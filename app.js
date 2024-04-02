@@ -37,7 +37,7 @@ function displayResults(data) {
             const categories = item.volumeInfo.categories ? item.volumeInfo.categories.join(", ") : "Catégorie inconnue";
             const thumbnail = item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : "https://via.placeholder.com/128x196?text=Image+non+disponible";
             const description = item.volumeInfo.description ? item.volumeInfo.description : "Pas de description disponible";
-
+            
             const bookDiv = document.createElement("div");
             bookDiv.innerHTML = `
                 <h3>${title}</h3>
@@ -57,8 +57,8 @@ function displayResults(data) {
                     alert('Ajouté aux favoris !');
                     sendData(item)
                 });
-
-                resultsDiv.appendChild(bookDiv);
+                cardDiv.appendChild(bookDiv);
+                resultsDiv.appendChild(cardDiv);
         })
 
         const details = document.querySelectorAll('.details')

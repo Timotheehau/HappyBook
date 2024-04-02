@@ -32,17 +32,7 @@ include './config/pdo.php';
     }
     ?>
 
-
-
-
 </div>
-
-
-
-
-
-
-
 
 <?php
 require_once 'partials/footer.php';

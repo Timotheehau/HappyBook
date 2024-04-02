@@ -17,7 +17,7 @@
                 <option value="children">Jeunesse</option>
             </select>
  
-            <button onclick="searchBooks()" class="search-btn">Rechercher</button>
+            <button onclick="searchBooks()" class="search-btn">Rechercher un livre</button>
         </div>
  
         <div id="results" class="results-grid"></div>
