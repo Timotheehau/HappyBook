@@ -3,23 +3,21 @@ require_once 'partials/header.php';
 ?>
 
 <div class="profile-card">
-    <div class="left">
-
-    </div>
-    <div class="right">
-        
         <h2>Informations</h2>
         <hr>
         <section class="infos">
             <div class="email">
                 <h3>Email</h3>
-                <p>
+                <h1 class="email_user">
                     <?php
-                    if (isset($_SESSION['user'])) {
-                        echo $_SESSION['user']['email'];
+                    if (isset($_SESSION['users'])) {
+                        echo $_SESSION['users']['email'];
                     }
                     ?>
-                </p>
+                </h1>
+                <img src="./pictures\Maya.PNG" alt="" id="picture_client">
+                <input type="text" placeholder="Titre" class="title">
+                    
             </div>
         </section>
 
