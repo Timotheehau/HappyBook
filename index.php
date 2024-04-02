@@ -6,8 +6,6 @@
 
 
 
-    <div class="container">
-        <h1>HappyBook</h1>
         <input type="text" id="searchInput" placeholder="Entrez le titre du livre" class="input-dark red">
             <select id="categorySelect" class="input-dark blue">
                 <option value="">Toutes catégories</option>

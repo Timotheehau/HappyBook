@@ -5,7 +5,7 @@ include './config/pdo.php';
 
 ?>
 
-<h1>Liste de favoris</h1>
+<h2>Liste de favoris</h2>
 
 <div class="liFav">
 

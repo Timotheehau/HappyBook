@@ -3,11 +3,7 @@ require_once 'partials/header.php';
 ?>
 
 <div class="profile-card">
-    <div class="left">
-
-    </div>
     <div class="right">
-        
         <h2>Informations</h2>
         <hr>
         <section class="infos">
@@ -22,7 +18,7 @@ require_once 'partials/header.php';
                 </p>
             </div>
         </section>
-
+    </div>
 </div>
 
 <?php

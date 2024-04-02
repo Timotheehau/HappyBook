@@ -1,4 +1,4 @@
-
+</div>
 <footer>
     <p>© <?= date('Y')?> - Tous droits réservés</p>
     
