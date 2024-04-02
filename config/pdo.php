@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:dbname=bibliothèque;host=localhost;";
+$dsn = "mysql:dbname=ebooks;host=localhost;";
 
 
 try {
@@ -10,5 +10,3 @@ try {
 catch (PDOException $error) {
     echo 'Connexion échouée : ' . $error->getMessage();
 }
-
-?>
