@@ -3,10 +3,6 @@
     include_once './partials/header.php';
 ?>
 
-
-
-
-
         <input type="text" id="searchInput" placeholder="Entrez le titre du livre" class="input-dark red">
             <select id="categorySelect" class="input-dark blue">
                 <option value="">Toutes catégories</option>
@@ -27,11 +23,6 @@
  
         <div id="results" class="results-grid"></div>
         <a href="login"></a>
- 
-
-
-
-
 
 <?php
     include_once './partials/footer.php';
