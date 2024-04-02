@@ -40,7 +40,7 @@ function displayResults(data) {
 
             const bookDiv = document.createElement("div");
             bookDiv.innerHTML = `
-                <h2>${title}</h2>
+                <h3>${title}</h3>
                 <img src="${thumbnail}" alt="${title}" style="width: 128px; height: 196px;">
                 <p>Auteur(s): ${authors}</p>
                 <p>Catégorie(s): ${categories}</p>
@@ -56,9 +56,11 @@ function displayResults(data) {
                     console.log(e.target)
                     alert('Ajouté aux favoris !');
                     sendData(item)
-                });
 
-                resultsDiv.appendChild(bookDiv);
+
+                });
+                cardDiv.appendChild(bookDiv);
+                resultsDiv.appendChild(cardDiv);
         })
 
         const details = document.querySelectorAll('.details')
@@ -70,12 +72,13 @@ function displayResults(data) {
         }); 
 
         function sendData(item) {
-            let name = title;
-            let author = authors;
+            let name = item.volumeInfo.title;
+            let author = item.volumeInfo.authors;
             let category = item.volumeInfo.categories;
             let description = item.volumeInfo.description;
             
             location.href = `addSuccess.php?name=${name}&author=${author}&category=${category}&description=${description}`;
+            
         }
     } else {
         resultsDiv.innerHTML = "<p>Aucun livre trouvé.</p>";
@@ -92,3 +95,36 @@ window.addEventListener('keypress', (e) => {
 // document.addEventListener('DOMContentLoaded', () => {
 //     alert('Bienvenue sur le site de recherche de livres !');
 // })
+
+
+// Le client va pouvoir ajouter une image à son profil
+
+// un utilisateur pet changer son image de profil
+// un utilisateur peut changer son nom
+// un utilisateur peut changer son email
+// un utilisateur peut changer son mot de passe
+// un utilisateur peut changer son adresse
+// un utilisateur peut changer son numéro de téléphone
+// un utilisateur peut changer sa date de naissance
+// un utilisateur peut changer son genre
+// un utilisateur peut changer son statut
+
+// un utilisateur peut ajouter un livre à ses favoris
+// un utilisateur peut supprimer un livre de ses favoris
+// un utilisateur peut voir la liste de ses favoris
+
+function changeProfileImage(imageUrl) {
+    // Code to change the user's profile image
+    // You can use the imageUrl parameter to update the user's profile image
+    // For example, you can update the image source of the profile image element with the new imageUrl
+    const profileImage = document.getElementById("#picture_client");
+    profileImage.src = imageUrl;
+    profileImage.addEventListener('click', () => {
+        alert('Image de profil modifiée !');
+    });
+
+}
+
+// Example usage:
+// changeProfileImage("https://example.com/new-profile-image.jpg");
+

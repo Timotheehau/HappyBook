@@ -12,6 +12,7 @@ ob_start();
     <input type="password" name="password" placeholder="Mot de passe">
     <button type="submit">Se connecter</button>
 
+</form>
 
 
 <?php
@@ -34,8 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                     $_SESSION['user'] = $result;
                     $_SESSION['user']['logged'] = true;
-                    header('Location: index.php');
-                    echo 'Vous êtes connecté';
+                    header('Location: profile.php');
+                    ?> <h1> <?= 'Vous êtes connecté';?></h1><?php
                     ob_end_flush();
                 } else {
                     $error = "Le mot de passe est incorrect";
@@ -48,3 +49,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+?>

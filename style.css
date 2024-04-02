@@ -38,7 +38,22 @@ h2 {
     font-weight: 600;
     margin-bottom: 10px;
     text-decoration: underline 2px #333;
+
     text-underline-offset: 5px;
+}
+ 
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: underline 2px #333;
+    text-underline-offset: 5px;
+}
+ 
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
  
 /* Navigation styles */
@@ -75,11 +90,16 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 12px;
     background-color: #fff;
+    border: solid 1px #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+}
+ 
+.details {
+    width: 100%;
 }
  
 /* Main content styles */
@@ -120,6 +140,10 @@ input:focus {
     outline: none;
     border-color: #555;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+ 
+.search-btn {
+    width: 100%;
 }
  
 /* Modern select styles */
@@ -166,4 +190,34 @@ button:hover {
  
 button:active {
     background-color: #000;
+}
+ 
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+ 
+.picture_client {
+    border-radius: 30%;
+}
+ 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: static;
+    bottom: 0 ;
+    padding: 10px;
+    width: 100%;
+}
+ 
+p {
+    padding-top: 10px;
 }
