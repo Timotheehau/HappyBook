@@ -40,7 +40,7 @@ function displayResults(data) {
 
             const bookDiv = document.createElement("div");
             bookDiv.innerHTML = `
-                <h2>${title}</h2>
+                <h3>${title}</h3>
                 <img src="${thumbnail}" alt="${title}" style="width: 128px; height: 196px;">
                 <p>Auteur(s): ${authors}</p>
                 <p>Catégorie(s): ${categories}</p>

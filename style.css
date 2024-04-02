@@ -167,3 +167,29 @@ button:hover {
 button:active {
     background-color: #000;
 }
+
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+ 
+.picture_client {
+    border-radius: 30%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: static;
+    bottom: 0 ;
+    padding: 10px;
+    width: 100%;
+}
