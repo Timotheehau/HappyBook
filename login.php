@@ -17,6 +17,7 @@ ob_start();
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    var_dump($_POST);
     if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -35,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                     $_SESSION['user'] = $result;
                     $_SESSION['user']['logged'] = true;
-                    header('Location: profile.php');
-                    ?> <h1> <?= 'Vous êtes connecté';?></h1><?php
+                    // header('Location: profile.php');
+                    alert('Vous êtes connecté');
                     ob_end_flush();
                 } else {
                     $error = "Le mot de passe est incorrect";

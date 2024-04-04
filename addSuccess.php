@@ -9,14 +9,18 @@ $category = $_GET['category'];
 $synopsis = $_GET['description'];
 
 // Préparer et exécuter la requête SQL
-$sql = "INSERT INTO books (name, author, category, synopsis) VALUES ('$name', '$author', '$category', '$synopsis)";
+$sql = "INSERT INTO books (name, author, category, synopsis) VALUES (?,?,?,?)";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$name, $author, $category, $synopsis]);
 
-if ($conn->query($sql) === TRUE) {
-    echo "Données insérées avec succès dans la base de données.";
-} else {
-    echo "Erreur lors de l'insertion des données : " . $conn->error;
-}
+var_dump($stmt);
+
+// if ($pdo->execute($sql) === TRUE) {
+//     echo "Données insérées avec succès dans la base de données.";
+// } else {
+//     echo "Erreur lors de l'insertion des données : " . $pdo->error;
+// }
 
 // Fermer la connexion à la base de données
-$conn->close();
+// $pdo->close();
 ?>

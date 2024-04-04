@@ -37,6 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 if ($result) {
                     header('Location: profile.php');
                     ob_end_flush();
+
+                    //Si l'adresse mail existe déjà en BDD alors impossible de l'ajouter
                 // Sinon on affiche l'erreur en question
                 } else {
                     $error = "Erreur lors de l'ajout : " . print_r($stmt->errorInfo());

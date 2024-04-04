@@ -100,31 +100,15 @@ window.addEventListener('keypress', (e) => {
 // Le client va pouvoir ajouter une image à son profil
 
 // un utilisateur pet changer son image de profil
-// un utilisateur peut changer son nom
-// un utilisateur peut changer son email
-// un utilisateur peut changer son mot de passe
-// un utilisateur peut changer son adresse
-// un utilisateur peut changer son numéro de téléphone
-// un utilisateur peut changer sa date de naissance
-// un utilisateur peut changer son genre
-// un utilisateur peut changer son statut
 
-// un utilisateur peut ajouter un livre à ses favoris
-// un utilisateur peut supprimer un livre de ses favoris
-// un utilisateur peut voir la liste de ses favoris
+// un utilisateur peut ajouter son nom
 
-function changeProfileImage(imageUrl) {
-    // Code to change the user's profile image
-    // You can use the imageUrl parameter to update the user's profile image
-    // For example, you can update the image source of the profile image element with the new imageUrl
-    const profileImage = document.getElementById("#picture_client");
-    profileImage.src = imageUrl;
-    profileImage.addEventListener('click', () => {
-        alert('Image de profil modifiée !');
-    });
-
-}
+function changeUserName(newName) {
+    // Code to change the user's name
+    const nameElement = document.querySelector(".title");
+    nameElement.textContent = "";
+    }
 
 // Example usage:
-// changeProfileImage("https://example.com/new-profile-image.jpg");
+// changeUserName("John Doe");
 
