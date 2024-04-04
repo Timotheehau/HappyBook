@@ -61,5 +61,3 @@ class DB {
 
 $connexion = new DB($dbsgbd, $dbhost, $dbname, $dbuser, $dbpassword, $dbport);
 
-
-?>
